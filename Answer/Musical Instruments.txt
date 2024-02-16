@@ -1,0 +1,542 @@
+Accordion
+Acoustic Bass Guitar	 	 
+Acoustic Guitar	
+Acoustic Bass Guitar		 
+Aeolian Harp	 	 
+Agung A Tamlang 	 
+Agung 
+Ahoko  	 
+Ajaeng	 	 
+Alboka  	 
+Alphorn
+Alpine Bell	 	 
+Alto Clarinet	 	 
+Alto Flute	 	 
+Alto Horn	 	 
+Alto Sarrusophone	 	 
+Alto Saxophone	 	 
+Angklung
+Appalachian Dulcimer
+Archlute
+Arghul
+Arpa Nottolini 	 	 
+Arpeggione	 
+Array Mbira 
+Aru-Ding 	 
+Aulochrome  	 
+Babendil	 
+Baglama	 
+Balafon 	 
+Balalaika 
+Bandola  	 
+Bandoneón	 
+Bandurria  	 
+Banhu	 	 
+Banjo	
+Barbat	 	 
+Baritone Horn	 	 
+Baritone Sarrusophone	 	 
+Baritone Saxophone	 	 
+Baroque Wooden Flute	 	 
+Baryton 	 
+Bass Clarinet	 	 
+Bass Drum	 	 
+Bass flute	 	 
+Bass Guitar	
+Bass Sarrusophone	 	 
+Bass Saxophone	 	 
+Bass 	 
+Basse A Pistons 	 	 
+Basse Cor	 	 
+Basset Clarinet	 	 
+Basset Horn	 	 
+Bassoon	
+Bawu 	 
+Bayan	 	 
+Bazooka 	 
+Bell	 	 
+Berimbau 	 
+Bianqing  	 
+Bianzhong  	 
+Bifora  	 
+Biniou 	 
+Biwa 	 	 
+Bock 	 
+Bodega	 	 
+Bodhrán	 	 
+Boha 	 	 
+Bombarde	 	 
+Bombardino 	 
+Bongo Drum	 	 
+Border Pipe 	 
+Bordonua  	 
+Bouzouki  	 
+Brian Boru Bagpipes	 	 
+Bullroarer	 	 
+Button Accordian
+Cabrette	 	 
+Calliope 	 
+Carillon 	 
+Carillon 	 
+Castanets	 	 
+Cavaco 
+Cavaquinho 	 	 
+Caxixi  	 
+Celesta 
+Cello 
+Ceng  
+Chabrette 
+Chapman Stick 	 
+Charango 	 
+Chenda  	 
+Chi 	 	 
+Chimes	 	 
+Ching 	 
+Chitarrone 	 
+Chitarra Battente  	 
+Chromatic Accordian	 	 
+Cigar Box Guitar	 	 
+Cimbalom 
+Cimbasso	 	 
+Cimpoi  
+Cittern 	 
+Clapped Hands	 	 
+Clarinet	
+Clarinette D’amour	 	 
+Classical Guitar	 	 
+Clavicembelo 	 
+Clavichord	 	 
+Clavichord 	 
+Concertina	 	 
+Conch  	 
+Conga 	 	 
+Contra-alto Clarinet	 	 
+Contra-alto Flute	 	 
+Contrabass á Anche	 	 
+Contrabass Clarinet	 	 
+Contrabass Flute	 	 
+Contrabass Oboe	 	 
+Contrabass Sarrusophone	 	 
+Contrabass Saxophone	 	 
+Contrabassoon	 	 
+Cornet
+Cornett
+Cornetto 	 
+Cornish Bagpipes	 	 
+Cowbell	 	 
+Croatian Bagpipes	 	 
+Cromorne	 	 
+Crotales 	 
+Crumhorn	 	 
+Crwth  
+Cuatro 	 
+Cuíca 	 
+Cymbals-Crash
+Cymbalum
+Da’uli da’uli 	 	 
+Dabakan 	 	 
+Dadihu 
+Dahu  
+Daiko 
+Dankiyo 
+Daraboukka  
+Darabukka 
+Darbuka 
+Darvyra 
+Denis D’or 
+Dhol  
+Dholak  
+Didgeridoo 	 
+Dihu 
+Diyingehu 
+Djembe 
+Doedelzak 	 
+Dombak  
+Domra 	 
+Dotara 
+Double Bass
+Double Contrabass Flute	 	 
+Doulophone 
+Drum Machine	 	 
+Dubreq Stylophone	 	 
+Duct Flute	 	 
+Dudelsack
+Dudy
+Duff 
+Dulcian 
+Dulcimer 
+Dulzaina 
+Dumbelek 	 
+Dun Dun 
+Dutar 
+Duxianqin
+Ektara 
+Electric Guitar	
+Electric Organ	
+Electric piano	 	 
+Electronic	 	 
+English Horn	 
+Erhu  
+Erxian 	 
+Euphonium
+Fangxiang
+Fiddle	 	 
+Finger Cymbals	 	 
+Fingerboard Synthesizer	 	 
+Fiscarmonica 
+Flageolets	 	 
+Flugelhorn	 	 
+Flute
+Folgerphone	 	 
+French Horn
+Gaida 
+Gaita 
+Gajdy 
+Gambang 
+Gan Han 	 
+Gandingan 
+Gandingan A Kayo 
+Ganza  
+Gaohu 
+Gayageum 
+Gehu 
+Gender 
+Geomungo
+Ghatam 
+Glass Marimba	 	 
+Glasschord 
+Glockenspiel	 
+Gong
+Gottuvadhyam 
+Great Highland Bagpipe	 	 
+Great Irish warpipes	 	 
+Guan 
+Gugin 	 
+Guiro 
+Guitar	 	 
+Guitar 12 Strings	
+Guitarrón 
+Guqin 
+Gusle
+Gusli 
+Guzheng
+Hammered Dulcimer	 	 
+Handbells	 	 
+Hang 
+Hardanger Fiddle	 	 
+Harmonica
+Harmonium
+Harp	
+Harp Guitar	 	 
+Harpsichord
+Heckelphone	 	 
+Hegelong 
+Hélicon	 	 
+Hichiriki 
+Hocchiku 
+Hooked Harp	 	 
+Horagai 
+Horn	 	 
+Hosho 
+Hsaio 
+Huemmelchen  
+Huluhu 
+Hun
+Hunting Horn
+Huqin
+Hurdy Gurdy
+Igil
+Inci
+Ipu 
+Irish Bouzouki	 	 
+Irish Uilleann 
+Istarski Mih 
+Janggu 
+Japanese Bamboo Flute
+Jew’s Harp
+Jew’s Harp 
+Jiaohu
+Jinghu 
+Jug	 	 
+Kadlong 
+Kagul 
+Kangling 
+Kaval 
+Kettle Drum
+Keyed Bugle	 	 
+Keyed Trumpet	 	 
+Khene  
+Khim 	 
+Khloy
+Khol  
+Kissar 
+Knatele 
+Kokyu 
+Komungo 
+Kora 
+Koto
+Koudi 
+Koziol 
+Kubing  
+Kulintang A Kayo 
+Kulintang A Putao 
+Kulintang
+Kutiyapi 
+Kwa-Yen 
+Kwintangen Kayo
+Lambeg 
+Lancashire Great-Pipe	 	 
+Langeleik 
+Laruan 
+Lasso d’amore	 	 
+Launeddas 
+Leier
+Leiqin 
+Lirone	 	 
+Lithophone
+Lusheng 
+Lute	
+Lyre	 	 
+Magyar Duda 
+Maguhu
+Malimba 
+Mando Bass 
+Mandocello
+Mandola
+Mandolin	 	 
+Mangtong
+Maraca	 	 
+Marimba	
+Marimbao
+Marinbaphone
+Mbira
+Mellophone	 	 
+Mellotron 
+Melodeon	 	 
+Melodica	 
+Metallophones 
+Mijwiz 
+Mittlealtersackpfeife 
+Mizwad 
+Moodswinger 
+Morin Khuur
+Mridangam 
+Muchosac  
+Musette Bressane 
+Musette De Cour 
+Musette Du Centre 
+Musical Bow	 	 
+Musical Saw 
+Nadaswaram 
+Naqara 
+Natural Trumpet	 	 
+Nay
+Ney 
+Northumbrian Smallpipes	 	 
+Nose flute	 	 
+Nyckelharpa
+Oboe
+Oboe d’amore	 	 
+Oboe Da Caccia	 	 
+Ocarina	
+Octaban 
+Octapad
+Octave Mandolin	 	 
+Octavin	 	 
+Octocontra-Alto Clarinet	 	 
+Octocontrabass Clarinet	 	 
+Oliphant
+Ondes Martenot
+Ophicleide	 	 
+Organ Electric	 	 
+Organ Pipe
+Overtone Guitar	 	 
+Paixiao
+Palendang 
+Pan pipes	 	 
+Pastoral Pipes	 	 
+Piano
+Piccolo	 	 
+Piccolo Clarinet	 	 
+Piccolo Heckelphone	 	 
+Piccolo Oboe	 	 
+Pipa
+Pipe Organ	 	 
+Piva
+Psaltery
+Pulalu
+Qanun
+Quena
+Quinticlave
+Racket	 	 
+Rainstick	 	 
+Raita 
+Rajao 
+Ranat Ek Elk 
+Ranat Thum Lek 
+Ratchet	
+Rattle	 	 
+Rebab 
+Rebec 
+Recorder 
+Reed Contrabass	 	 
+Reed Pipe	 	 
+Riq
+Roman Tuba	 	 
+Ruan 	 
+Rudra Veena 
+Ryuteki 
+Sabar 
+Sac De Gemecs 
+Sackbutt 
+Säckpipa  
+Saenghwang 
+Sallaneh 
+Sampho 
+Sampler	 	 
+Sang-auk 
+Santur 
+Saraswati Veena 
+Sarrusophone	 	 
+Sarunay
+Saung 
+Saw Ou 
+Saw Sam Sai 
+Saxhorn	 	 
+Saxonette	 	 
+Saxophone	 	 
+Schweizer Sackpfeife 
+Scottish Smallpipes	 	 
+Se  	 
+Serpent	 	 
+Serunai 
+Setar 
+Shamisen
+Shawm 
+Shekere 
+Sheng 
+Shinobue
+Shofar 
+Singing Bowl
+Siren	 	 
+Sitar
+Sleigh Bells
+Slide Guitar	 	 
+Slide Whistle	 	 
+Slit Drum	 	 
+Snare Drum
+Sopranino Clarinet	 	 
+Sopranino Saxophone	 	 
+Soprano Clarinet	 	 
+Soprano Mandolin	 	 
+Soprano Saxophone	 	 
+soprillo	 	 
+Sorna 
+Sousaphone	 	 
+Spoons	 	 
+Sralai 
+Steel Drum	 	 
+Steel Guitar	 	 
+Subcontrabass Flute	 	 
+Subcontrabass Saxophone	 	 
+Suling
+Suona
+Synclavier	 	 
+Synthesizer
+Tabla
+Tagutok
+Taiko 
+Talking drum	 	 
+Tambour 
+Tambourine	 	 
+Tamburitza 
+Tan-tan 
+Taphon
+Tar 
+Tárogató 
+Tea Chest Bass 
+Tenor Horn	 	 
+Tenor Mandola
+Tenor Sarrusophone	 	 
+Tenor Saxophone	
+Tenoroon 
+Teponaztli 
+Thavil 
+Theorbo 
+Theremin
+Timpani
+Timple
+Tin whistle	 	 
+Tjelempung
+Tom-Tom	 	 
+Tonette 
+Torupill
+Transverse Flute 
+Trekspill
+Tres
+Triangle	
+Tro U 
+Tromba Marina 
+Trombone	
+Tromboon
+Trompeta China 
+Trumpet	 	 
+Trumpet Bb
+Tsampouna 
+Tsuri-daiko
+Tuba
+Tubular Bells	 	 
+Tuhu
+Tulum
+Tumpong 
+Turntables	 	 
+Ud
+Udu
+Ukulele
+Valiha
+Vertical Flute	 	 
+Vertical Viola	 	 
+Veuze
+Vibraphone
+Vichitra Veena
+Vielle 
+Vihuela
+Viola	
+Viola D’amore	 	 
+Viola Da Gamba	 	 
+Viola Organista	 	 
+Violin
+Violotta	 	 
+Vladimirsky Rozhok	 	 
+Volinka 
+Wagner Tuba	 	 
+Washboard	 	 
+Washint
+Washtub Bass	 	 
+Welsh Pipes	 	 
+Whip
+Whistle
+Willow Flute	 	 
+Wind Chimes	 	 
+Xalam
+Xiao 
+Xiaodihu
+Xun
+Xylophone
+Xylorimba
+Yang Chiin
+Yang Chin
+Yayli Tanbur
+Yazheng
+Yehu 
+Yu
+Yueh Ch’in 
+Yun Lo
+Zampogna
+Zaqq
+Zhongdihu 
+Zhuihu
+Zither
+Zonghu
+Zufalo 
+Zurna

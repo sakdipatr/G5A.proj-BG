@@ -1,0 +1,317 @@
+Alarm clock	
+Air conditioner	
+Apple peeler
+Amplifier	
+Airpod	
+Appliance
+Adding machine	
+Apple tv	
+Ammeter
+Android	
+A computer	
+Apple tablet
+Apple phone	
+Airbrush	
+Androids
+Blender	
+Binoculars	
+Band
+Boom box	
+Battery pack	
+Boat
+Bluetooth	
+Batteries	
+Bulb
+Book light	
+Blinkers	
+Blue phone
+Bluetooth speakers	
+Boombox	
+Blackberry phone
+Battery charger	
+Bluetooth headphones
+Beard trimmer
+Camera	
+Cell phone	
+Card machine
+Cellphone	
+Card reader	
+Card
+Car charger	
+Car keys	
+Cool phone
+Card machine	
+Cellular device	
+Cash register
+Coffee machine	
+Computer monitor	
+Car remote
+Digital camera	
+Drone	
+Dance machine
+Dishwasher	
+Dryer	
+Dehumidifier
+Disc	
+Drones	
+Devices
+Doorbell	
+Door bell	
+Dreamcast
+Dryer	
+Diode	
+Digital card
+Drill	
+Dell laptop	
+Discman
+Egg timer	
+Ebook	
+Electronic car
+Electric guita	
+Earpiece	
+E-cig
+Electric shaver	
+Electronic phon	
+Electric heater
+Electric toothbrush	
+Ear piece	
+Electric stove
+Electric mixer	
+Ear phones	
+Electric kettl
+Escalator	
+Electric cooker	
+Electric drill
+Electronic calculator	
+Electronic guitar	
+Electronic drill
+Firestick	
+Fryer	
+Fire stick
+Flashlight	
+Fitbit	
+Furby
+Fridge	
+Freezer	
+Fm radio
+Fog machine	
+Furnace	
+Flip phones
+Flame thrower	
+Face id	
+Frogger
+Gamecube	
+Games	
+Go pro
+Game controller	
+Gyroscope	
+G-shock watch
+Generator	
+Gaming laptop	
+G-shock
+Geiger counter	
+Gaming system	
+Griddle
+Gaming consol	
+Google glass	
+Garmin watch
+Hard drive	
+Huawei	
+Heat gun
+Headphones	
+Head massager	
+Hardrive
+Hoverboard	
+Hand dryer	
+Headlights
+Head phones
+House alarm	
+Hover board
+Heart monitor	
+Huawei phone	
+Hair trimmer
+Internet router	
+I-pod	
+Ink printer
+Ipod touch	
+Iron	
+Internet cable
+Inkjet printer	
+Ipod nano	
+Indicator
+Iphone	
+Iphone-3	
+I-phone
+Jetpack	
+Jump lead	
+Jingle
+Jamboard	
+Jumbotron	
+Juke box
+Jammer	
+Jig saw	
+Juke box
+Jam maker	
+Jukebox	
+Jaguar car
+Keyboar	Kinect	
+Kites
+Kindle	
+Knife sharpener	
+Kitchen oven
+Keurig	
+Kitchen mixer	
+Kangaroo
+Kühlschrank	
+Kitchenaid mixer	
+Kitchen blender
+Laminator	
+Light bulb	
+Lamps
+Lamp	
+Lawn mower	
+Lightstick
+Laptop	
+Lawnmower	
+Life alert
+Lights	
+Lightbox	
+Lcd screen
+Lightbulb	
+Leg massager	
+Lightswitch
+Lazer pointer	
+Lite bright	
+Lexus
+Macbook	
+Matrix	
+Meter
+Music player	
+Mixing tool	
+Moped
+Microwave	
+Mobil phone	
+Massage chair
+Memory card	
+Macbook air	
+Massager
+Microphone	
+Microsoft	
+Motorola phone
+Night light	
+Nikon	
+Netflix
+Nightlight	
+Neon lights	
+Netgear router
+Nikon camera	
+Note book	
+Nano bots
+Notepad	
+Neopet	
+Nutribulle
+Neon lights	
+Notebook	
+Night lamp
+Odometer	
+Owlet	
+Oppo
+Oppo phone	
+Oled tv	
+Onstar
+Oppo mobile	
+Otamatone	
+Omnitrix
+Oscilloscope	
+Oscillating fan	
+Omlette maker
+Punch clock	Phone	
+Peloton
+Power bank	
+Palm pilot	
+Pie maker
+Portable speaker	
+Portable charger	
+Panasonic tv
+Popcorn machine	
+Playstation	
+Popcorn Maker
+Q-Meter
+Recorder	
+Race car	
+Rain meter
+Reading lamp	
+Resistor	
+Router
+Refrigerator	
+Reading light	
+Rowing machine
+Refridgerator	
+Remote control	
+Recording device
+Scanner	
+Switch	
+Slicer
+Screen	
+Smart tv	
+Snow blower
+Smoke detector	
+Straightener	
+Speaker
+Sega dreamcast	
+Super computer	
+Samsung watch
+Samsung phone	
+Stopwatch	
+Sim card
+Tesla	
+Touchpad	
+Telaphone
+Trimmer	
+Thinkpad	
+Telephone
+Toaster	
+Timer	
+Telegraph
+Telescope	
+Tripod	
+Thermostat
+Transistor	
+Telegram	
+Thumb drive
+Tachometer	
+Tape player	
+Timers
+Usb stick	
+Uav	Usb drive
+Ultraviolet light	
+Usb drive	
+Underwire
+Ultrasound machine	
+Underwater camera	
+Underarm shaver
+Vending machine	
+Vertu phone	
+Vaper
+Ventilator	
+Video tape	
+Vacuum
+Vhs player	
+Video game	
+Vape pen
+Videogames	
+Vaccum cleaner	
+Vaccuum
+V tech	
+Vaporiser	
+Vizio tv	
+Video console	
+Wifi route	
+Walkman	
+Washing machine
+Washing machine	
+Walkie talkie
+Windows computer
+XLR connector
+Y-Admittance
+ZIF

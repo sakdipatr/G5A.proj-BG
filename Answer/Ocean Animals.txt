@@ -1,0 +1,114 @@
+Anemone
+Angelfish
+Angelshark
+Anglerfish
+Barnacle
+Barracuda
+Basking Shark
+Blobfish
+Blue-Ringed Octopus
+Blue Whale
+Bull Shark
+Clam
+Clownfish
+Cod
+Coelacanth
+Cookiecutter Shark
+Crab
+Cuttlefish
+Dogfish
+Dolphin
+Dugong
+Eagle Ray
+Emperor Angelfish
+Fish
+Flatback Sea Turtle
+Flounder
+Flying Fish
+Frilled Shark
+Great White Shark
+Grouper
+Hammerhead Shark
+Hermit Crab
+Horseshoe Crab
+Humpback Whale
+Isopod
+Jellyfish
+John Dory
+Krill
+Kingfish
+Leafy Sea Dragon
+Leatherback Sea Turtle
+Leopard Shark
+Limpet
+Lionfish
+Lobster
+Loggerhead Sea Turtle
+Mackerel
+Mahi-Mahi
+Manta Ray
+Mollusk
+Monk Seal
+Moray Eel
+Nautilus
+Needlefish
+Nudibranch
+Nurse Shark
+Oarfish
+Ocean Sunfish
+Oceanic Whitetip Shark
+Octopus
+Olive Ridley Sea Turtle
+Olive Sea Snake
+Opah
+Orange Skunk Clownfish
+Oyster
+Parrotfish
+Pilot Whale
+Porpoise
+Puffer Fish
+Quagga Catshark
+Queen Angelfish
+Queen Triggerfish
+Ray
+Remora
+Ribbon Eel
+Right Whale
+Sailfish
+Sardine
+Sawfish
+Sea Krait
+Sea Turtle
+Seahorse
+Shark
+Shrimp
+Smoothhound
+Sperm Whale
+Spiny Dogfish
+Squid
+Starfish
+Stingray
+Sturgeon
+Swordfish
+Tang
+Thresher Shark
+Tiger Shark
+Tuna
+Turtle
+Undulated Moray Eel
+Unicornfish
+Urchin
+Vaquita
+Velvet Whalefish
+Viperfish
+Whale
+Whale Shark
+Wolf Eel
+Wrasse
+Xiphias
+Yellow-Bellied Sea Snake
+Yellow Tang
+Yeti Crab
+Zebra Moray Eel
+Zebra Shark
+Ziphius
