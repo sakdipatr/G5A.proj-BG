@@ -1,10 +1,10 @@
 Sports:
 Vegetables:
 Song Title:
-Colors:
-Parts of the Body:
+Item within eyesight:
+Things in a museum:
 Board Games:
-Video Games:
+Ice cream flavors:
 Clothing:
 Fruits:
 Car Brands:
