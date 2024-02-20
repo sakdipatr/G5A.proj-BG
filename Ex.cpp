@@ -14,9 +14,9 @@ string aws1[10] = {"Capital cities.txt","Countries.txt","Land Animals.txt","Musi
 int main() {
     srand(time(0));
 
-    ifstream qs,checkaws,aws_now;
+    ifstream qs,checkaws,;
     ofstream dest;
-    string tl,aws,tl_now;
+    string tl,aws,;
     string ans_arch[];
     int st = 1;
     int bt = 0;
@@ -58,7 +58,6 @@ int main() {
         qs.close();
 
         for(int i = 0; i < 10 ; i++){
-            aws_now.open("Answer_now.txt");
             checkaws.open("Answer\\"+aws1[i]);
             cout << i+1 << ". ";
             for(int j = 0; j < ans_arch.size();j++){
@@ -70,8 +69,6 @@ int main() {
                 }
             }
             checkaws.close();
-            aws_now.close();
-            
         }
 
         cout << endl << "*-----------------------*" << endl;
