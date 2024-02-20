@@ -33,6 +33,7 @@ int main() {
     string ans_arch[];
     int st = 1;
     int bt = 0;
+    int sec = 0;
     int score = 0;
 
     while(st == 1){
@@ -50,7 +51,10 @@ int main() {
             cout << endl << "*-----------------------*" << endl;
             cout << endl ;
         }
-        // **countdown timer**
+
+        cout << "Enter time (sec) : ";
+        cin >> sec;
+        Countdown_Timer(sec);
 
         while(getline(qs, tl)){
             cout << tl << ' ';
