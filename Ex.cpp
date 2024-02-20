@@ -17,6 +17,7 @@ int main() {
     ifstream qs,checkaws,aws_now;
     ofstream dest;
     string tl,aws,tl_now;
+    string ans_arch[];
     int st = 1;
     int bt = 0;
     int score = 0;
@@ -50,13 +51,19 @@ int main() {
         cout << endl <<"*-----------------------*" << endl;
         cout << endl ;
 
+        qs.open("Answer_now.cpp");
+        while(getline(qs,tl)){
+            ans_arch = tl;
+        }
+        qs.close();
+
         for(int i = 0; i < 10 ; i++){
             aws_now.open("Answer_now.txt");
             checkaws.open("Answer\\"+aws1[i]);
             cout << i+1 << ". ";
-            while(getline(aws_now,tl_now)){
+            for(int j = 0; j < ans_arch.size();j++){
                 while(getline(checkaws,tl)){
-                    if(tl == tl_now){
+                    if(tl == ans_arch[j]){
                         cout << tl_now << " +1score" << " ";
                         score++ ;
                     }
