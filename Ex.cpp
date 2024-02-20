@@ -7,9 +7,22 @@
 #include <thread>
 
 using namespace std;
+using namespace std::chrono;
 
 string text[26] = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
 string aws1[10] = {"Capital cities.txt","Countries.txt","Land Animals.txt","Musical Instruments.txt","Flowers.txt","Perfume Brands.txt","Languages.txt","Ocean Animals.txt","Electronic Gadgets.txt","Cooking Utensils.txt"};
+
+void Countdown_Timer(int seconds){
+    if(seconds <= 0){
+        cout << "Time's up." << endl;
+        return;
+    }
+    if(seconds==10){
+        cout << seconds << "SECOND LEFT!!!!" << endl;
+    }
+    this_thread::sleep_for(std::chrono::seconds(1));
+    Countdown_Timer(seconds-1);
+}
 
 int main() {
     srand(time(0));
