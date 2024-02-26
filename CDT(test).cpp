@@ -15,3 +15,6 @@ void Countdown_Timer(int seconds){
     this_thread::sleep_for(std::chrono::seconds(1));
     Countdown_Timer(seconds-1);
 }
+int main(){
+    Countdown_Timer(60);
+}
