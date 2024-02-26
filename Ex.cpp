@@ -5,6 +5,7 @@
 #include <fstream>
 #include <chrono>
 #include <thread>
+#include <vector>
 
 using namespace std;
 using namespace std::chrono;
@@ -15,26 +16,14 @@ string aws1[10] = {"Capital cities.txt","Countries.txt","Land Animals.txt","Musi
 string aws2[10] = {"Body parts.txt","Colors.txt","Programming Languages.txt","Gemstones.txt","Disney Character Names.txt","Video Games.txt","Job titles.txt","Holidays.txt","Celebrities.txt","Indoors and Outdoor Hobbies.txt"};
 string aws3[10] = {"Sports.txt","Vegetables.txt","Subjects.txt","Construction.txt","Thing in a museum.txt","Board Games.txt","Ice cream flavors.txt","Clothing Brands.txt","Fruits.txt","Car brands.txt"};
 
-void Countdown_Timer(int seconds){
-    if(seconds <= 0){
-        cout << "Time's up." << endl;
-        return;
-    }
-    if(seconds==10){
-        cout << seconds << "SECOND LEFT!!!!" << endl;
-    }
-    this_thread::sleep_for(std::chrono::seconds(1));
-    Countdown_Timer(seconds-1);
-}
-
 int main() {
     srand(time(0));
 
-    ifstream qs,checkaws,;
+    ifstream qs,checkaws;
     ofstream dest;
-    string tl,aws,;
-    string ans_arch[];
-    string q_ans[];
+    string tl,aws;
+    vector<string> ans_arch;
+    string q_ans[10];
     int st = 1;
     int bt = 0;
     int sec = 0;
@@ -58,7 +47,6 @@ int main() {
         }
         
         qs.open("Question\\"+ques[q]);
-        dest.open("Answer_now.txt");
 
         cout << "pls Enter number 1 : ";
         cin >> bt;
@@ -74,35 +62,29 @@ int main() {
 
         cout << "Enter time (sec) : ";
         cin >> sec;
-        Countdown_Timer(sec);
 
         while(getline(qs, tl)){
             cout << tl << ' ';
             cin >> aws;
-            dest << aws << endl;
+            ans_arch.push_back(aws);
         }
 
         qs.close();
-        dest.close();
 
         cout << endl <<"*-----------------------*" << endl;
         cout << endl ;
 
-        qs.open("Answer_now.cpp");
-        while(getline(qs,tl)){
-            ans_arch = tl;
+        for(int i = 0 ; i < 10 ; i ++){
+            cout << ans_arch[i] <<endl;
         }
-        qs.close();
 
-        for(int i = 0; i < ans_arch.size(); i++){
+        for(int i = 0; i < 10; i++){
             checkaws.open("Answer\\"+q_ans[i]);
             cout << i+1 << ". ";
-            for(int j = 0; j < ans_arch.size(); j++){
-                while(getline(checkaws,tl)){
-                    if(tl == ans_arch[j]){
-                        cout << tl_now << " +1score" << " ";
-                        score++ ;
-                    }
+            while(getline(checkaws,tl)){
+                if(tl == ans_arch[i]){
+                    cout << tl << " +1score" << " ";
+                    score++ ;
                 }
             }
             checkaws.close();
