@@ -52,20 +52,6 @@ void random_question(){
     }
 }
 
-void answer_ply(){
-    qs.open("Question\\"+ques[q]);
-    while(getline(qs, tl)){
-        cout << tl << ' ';
-        cin >> aws;
-        if(r == 0) {
-            ::ch_n = 0;
-            break;
-        }
-        ::ans_arch.push_back(aws);
-    }
-    qs.close();
-}
-
 void check_answer(){
     for(int i = 0; i < ans_arch.size(); i++){
         checkaws.open("Answer\\"+q_ans[i]);
@@ -78,6 +64,23 @@ void check_answer(){
         }
         checkaws.close();
     }
+    cout << endl;
+}
+
+void answer_ply(){
+    qs.open("Question\\"+ques[q]);
+    while(getline(qs, tl)){
+        cout << tl << ' ';
+        cin >> aws;
+        if(r == 0) {
+            ::ch_n = 0;
+            break;
+        }
+        ::ans_arch.push_back(aws);
+    }
+    qs.close();
+    cout << endl;
+    check_answer();
 }
 
 void Countdown_Timer(int seconds){
@@ -124,16 +127,11 @@ int main() {
                 cout << "Round "<< n+1 << " player : "<< name_ply[n] << endl;
                 cout << endl;
                 ::ch_n = 1;
-                thread taskCD(Countdown_Timer, sec);
+                //thread taskCD(Countdown_Timer, sec);
                 cout << r << " " << "SECOND LEFT!!!!" << endl << endl;
 
                 random_question();
                 answer_ply();
-
-                cout << endl <<"*-----------------------*" << endl;
-                cout << endl ;
-
-                check_answer();
 
                 cout << endl << "*-----------------------*" << endl;
                 cout << endl << name_ply[n]<<" score is : " << score << endl;
