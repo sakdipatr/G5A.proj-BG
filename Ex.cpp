@@ -8,57 +8,69 @@
 #include <vector>
 
 using namespace std::chrono;
+using namespace std;
 
-std::string text[26] = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
-std::string ques[3] = {"1st_Q-list.txt","2nd_Q-list.txt","3rd_Q-list.txt"};
-std::string aws1[10] = {"Capital cities.txt","Countries.txt","Land Animals.txt","Musical Instruments.txt","Flowers.txt","Perfume Brands.txt","Languages.txt","Ocean Animals.txt","Electronic Gadgets.txt","Cooking Utensils.txt"};
-std::string aws2[10] = {"Body parts.txt","Colors.txt","Programming Languages.txt","Gemstones.txt","Disney Character Names.txt","Video Games.txt","Job titles.txt","Holidays.txt","Celebrities.txt","Indoors and Outdoor Hobbies.txt"};
-std::string aws3[10] = {"Sports.txt","Vegetables.txt","Subjects.txt","Construction.txt","Thing in a museum.txt","Board Games.txt","Ice cream flavors.txt","Clothing Brands.txt","Fruits.txt","Car brands.txt"};
+char letters[27] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+string ques[3] = {"1st_Q-list.txt","2nd_Q-list.txt","3rd_Q-list.txt"};
+string aws1[10] = {"Capital cities.txt","Countries.txt","Land Animals.txt","Musical Instruments.txt","Flowers.txt","Perfume Brands.txt","Languages.txt","Ocean Animals.txt","Electronic Gadgets.txt","Cooking Utensils.txt"};
+string aws2[10] = {"Body parts.txt","Colors.txt","Programming Languages.txt","Gemstones.txt","Disney Character Names.txt","Video Games.txt","Job titles.txt","Holidays.txt","Celebrities.txt","Indoors and Outdoor Hobbies.txt"};
+string aws3[10] = {"Sports.txt","Vegetables.txt","Subjects.txt","Construction.txt","Thing in a museum.txt","Board Games.txt","Ice cream flavors.txt","Clothing Brands.txt","Fruits.txt","Car brands.txt"};
+int r =1;
+
+void Countdown_Timer(int seconds){
+    if(seconds <= 0){
+        cout << endl << "Time's up." << endl;
+        ::r = 0;
+        return;
+    }
+    if(seconds==10){
+        cout << seconds << "SECOND LEFT!!!!" << endl;
+    }
+    this_thread::sleep_for(std::chrono::seconds(1));
+    Countdown_Timer(seconds -1);
+}
 
 int main() {
     srand(time(0));
 
-    std::ifstream qs,checkaws;
-    std::ofstream dest;
-    std::string tl,aws,name;
-    std::vector<std::string> ans_arch;
-    std::vector<std::string> q_ans;
-    std::vector<std::string> name_ply;
+    ifstream qs,checkaws;
+    string tl,aws,name;
+    vector<string> ans_arch;
+    vector<string> q_ans;
+    vector<string> name_ply;
     int st = 1;
     int bt = 0;
     int sec = 0;
     int score = 0;
     int n_name = 0;
-    
 
     while(st == 1){
 
-        std::cout << "pls Enter number 1 : ";
-        std::cin >> bt;
-        std::cout << "-----------------------------------"<< std::endl;
+        cout << "pls Enter number 1 : ";
+        cin >> bt;
+        cout << "-----------------------------------"<< endl;
 
         if(bt == 1){
-            std::cout << "player = ";
-            std::cin >> n_name;
+            cout << "player = ";
+            cin >> n_name;
             for (int i = 0 ; i < n_name; i++){
-                std::cout << "name player " << i+1 << " = ";
-                std::cin >> name;
+                cout << "name player " << i+1 << " = ";
+                cin >> name;
                 name_ply.push_back(name);
             }
             int x = rand()%26;
-            std::cout <<  "*-----------------------*" << std::endl;
-            std::cout << std::endl << "your letter is "<< text[x] << std::endl;
-            std::cout << std::endl << "*-----------------------*" << std::endl;
-            std::cout << std::endl ;
-
-            std::cout << "Enter time (sec) : ";
-            std::cin >> sec;
-            std::cout << std::endl << "*-----------------------*" << std::endl;
-
+            cout <<  "*-----------------------*" << endl;
+            cout << endl << "your letter is "<< letters[x] << endl;
+            cout << endl << "*-----------------------*" << endl;
+            cout << endl ;
+            cout << "Enter time (sec) : ";
+            cin >> sec;
+            cout << endl << "*-----------------------*" << endl;
+            thread taskCD(Countdown_Timer, sec);
             // cd timer
             for(int n = 0 ; n < n_name ; n++){
-                std::cout << "round "<< n+1 << " player : "<< name_ply[n] << std::endl;
-                std::cout << std::endl;
+                cout << "round "<< n+1 << " player : "<< name_ply[n] << endl;
+                cout << endl;
 
                 int q = rand()%3;
                 if( q == 0 ){
@@ -76,39 +88,41 @@ int main() {
                 }
 
                 qs.open("Question\\"+ques[q]);
-                
+                        
                 //พิมพ์คำตอบ
                 while(getline(qs, tl)){
-                    std::cout << tl << ' ';
-                    std::cin >> aws;
+                    cout << tl << ' ';
+                    cin >> aws;
                     ans_arch.push_back(aws);
+                    if(r != 1) break;
                 }
 
                 qs.close();
 
-                std::cout << std::endl <<"*-----------------------*" << std::endl;
-                std::cout << std::endl ;
+                cout << endl <<"*-----------------------*" << endl;
+                cout << endl ;
 
                 //เช็คคะแนน
                 for(int i = 0; i < 10; i++){
                     checkaws.open("Answer\\"+q_ans[i]);
-                    std::cout << i+1 << ". ";
+                    cout << i+1 << ". ";
                     while(getline(checkaws,tl)){
                         if(tl == ans_arch[i]){
-                            std::cout << ans_arch[i] << " +1score" << " ";
+                            cout << ans_arch[i] << " +1score" << " ";
                             score++ ;
                         }
                     }
                     checkaws.close();
                 }
 
-                std::cout << std::endl << "*-----------------------*" << std::endl;
-                std::cout << std::endl << name_ply[n]<<" score is : " << score << std::endl;
-                std::cout << std::endl << "-----------------------------------"<< std::endl;
+                cout << endl << "*-----------------------*" << endl;
+                cout << endl << name_ply[n]<<" score is : " << score << endl << sec << " " << r << " ";
+                cout << endl << "-----------------------------------"<< endl;
 
-                st = 0;
+                score = 0;
             }
         }
+    st = 0;
     }
     return 0;
 }

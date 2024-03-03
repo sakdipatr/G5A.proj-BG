@@ -16,5 +16,5 @@ void Countdown_Timer(int seconds){
     Countdown_Timer(seconds-1);
 }
 int main(){
-    Countdown_Timer(60);
+    
 }
