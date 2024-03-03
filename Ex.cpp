@@ -20,7 +20,6 @@ vector<string> ans_arch;
 vector<string> q_ans;
 vector<string> name_ply;
 int r = 0;
-int ch_n = 0;
 int score = 0;
 int n_name = 0;
 int q = 0;
@@ -73,7 +72,6 @@ void answer_ply(){
         cout << tl << ' ';
         cin >> aws;
         if(r == 0) {
-            ::ch_n = 0;
             break;
         }
         ::ans_arch.push_back(aws);
@@ -84,16 +82,14 @@ void answer_ply(){
 }
 
 void Countdown_Timer(int seconds){
-    if(ch_n == 1){
         if(seconds <= 0){
             cout << endl << endl << "Time's up !!!  T_T" << endl;
             ::r = 0;
-            ::ch_n = 0;
             return;
         }
         this_thread::sleep_for(std::chrono::seconds(1));
         Countdown_Timer(seconds -1);
-    }
+    
 }
 
 int main() {
@@ -126,7 +122,6 @@ int main() {
             for(int n = 0 ; n < n_name ; n++){
                 cout << "Round "<< n+1 << " player : "<< name_ply[n] << endl;
                 cout << endl;
-                ::ch_n = 1;
                 //thread taskCD(Countdown_Timer, sec);
                 cout << r << " " << "SECOND LEFT!!!!" << endl << endl;
 
@@ -138,7 +133,6 @@ int main() {
                 cout << endl << "-----------------------------------"<< endl;
 
                 ::ans_arch.clear();
-                ::ch_n = 0;
                 ::r = sec;
                 score = 0;
             }
