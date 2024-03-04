@@ -7,6 +7,7 @@
 #include <thread>
 #include <vector>
 #include <cstring>
+#include <algorithm>
 
 using namespace std;
 
@@ -16,9 +17,8 @@ string aws1[10] = {"Capital cities.txt","Countries.txt","Land Animals.txt","Musi
 string aws2[10] = {"Body parts.txt","Colors.txt","Programming Languages.txt","Gemstones.txt","Disney Character Names.txt","Video Games.txt","Job titles.txt","Holidays.txt","Celebrities.txt","Indoors and Outdoor Hobbies.txt"};
 string aws3[10] = {"Sports.txt","Vegetables.txt","Subjects.txt","Construction.txt","Thing in a museum.txt","Board Games.txt","Ice cream flavors.txt","Clothing Brands.txt","Fruits.txt","Car brands.txt"};
 string tl,aws,name;
-vector<string> ans_arch;
-vector<string> q_ans;
-vector<string> name_ply;
+vector<string> ans_arch,q_ans,name_ply;
+vector<int> ch_win;
 char ltt;
 int r = 0;
 int score = 0;
@@ -99,6 +99,29 @@ void Countdown_Timer(double seconds){
     }
 }
 
+void check_winner(){
+    int maxScore = ch_win[0]; 
+    int winnerIndex = 0; 
+    for (int i = 1; i < n_name; i++){
+        if (ch_win[i] > maxScore){
+            maxScore = ch_win[i];
+            winnerIndex = i;
+        }
+    }
+    bool draw = false;
+    for (int i = 0; i < n_name; i++){
+        if (i != winnerIndex && ch_win[i] == maxScore){
+            draw = true;
+            break;
+        }
+    }
+    if (draw){
+        cout << "Draw. T-T" << endl;
+    }else{
+        cout << name_ply[winnerIndex] << " is the winner!!!" << endl;
+    }
+}
+
 void Draw_G(){
     ::r = 0;
     int ch_n = 0;
@@ -165,12 +188,11 @@ int main() {
     srand(time(0));
     int st = 1;
     int bt = 0;
-    vector<int> ch_win;
-    cout << "                                   ***   ***  " << "                                                                                        ***   ***  "  << endl;
-    cout << "                                  ***** ***** " << "           ___       ___  ___          ___    "    <<  " _____  ___  "  <<  "    ___  ___   ___  |  |   " << " ***** ***** "  << endl;
-    cout << "                                 *************" << "   |    | |    |    |    |   | |\\  /| |       "   <<  "   |   |   | "  <<  "   |    |     |     |  |   " << "*************"  << endl;
-    cout << " -._.-._.-._.-._.-._.-._.-._.-._. *********** " << "   | /\\ | |--- |    |    |   | | \\/ | |---    "  <<  "   |   |   | "  <<  "   '--. | --. |     |  |   " << " *********** -._.-._.-._.-._.-._.-._.-._.-._. ";
-    cout << "                                  *********  "  << "   |/  \\| |___ |___ |___ |___| |    | |___    "   <<  "   |   |___| "  <<  "   ___| |___| |___  .  .   " << "  *********  "  << endl;
+    cout << "                                   ***   ***  " << "                                                                                         ***   ***  "  << endl;
+    cout << "                                  ***** ***** " << "            ___       ___  ___          ___    "    <<  " _____  ___  "  <<  "    ___  ___   ___  |  |   " << " ***** ***** "  << endl;
+    cout << "                                 *************" << "    |    | |    |    |    |   | |\\  /| |       "   <<  "   |   |   | "  <<  "   |    |     |     |  |   " << "*************"  << endl;
+    cout << " -._.-._.-._.-._.-._.-._.-._.-._. *********** " << "    | /\\ | |--- |    |    |   | | \\/ | |---    "  <<  "   |   |   | "  <<  "   '--. | --. |     |  |   " << " *********** " << endl;
+    cout << "                                  *********  "  << "     |/  \\| |___ |___ |___ |___| |    | |___    "   <<  "   |   |___| "  <<  "   ___| |___| |___  .  .   " << "  *********  "  << endl;
     cout << "                                     *****    " << "                                                                                          *****    "  <<endl;
     cout << "                                       *      " << "                                                                                            *      "  << endl;
     while(st == 1){
@@ -199,17 +221,9 @@ int main() {
                 cout << endl << "*-----------------------*" << endl;
                 cout << endl << name_ply[n]<<" score is : " << score << endl;
                 ch_win.push_back(score);
-                if(n == n_name-1){//////////////////////////////////////////////
-                    for(int i = 0; i < n_name; i++){
-                        if(ch_win[i] > ch_win[i+1]){
-                            cout << name_ply[i] << " is win.!!!!";
-                        }else if(ch_win[i] == ch_win[i+1]){
-                            cout << "draw. T-T";
-                        }else{
-                            cout << "nice try.!!!!";
-                        }
-                    }
-                }///////////////////////////////////////////////////////////////
+                if(n == n_name - 1){
+                    check_winner();
+                }
                 cout << endl << "-----------------------------------"<< endl;
                 ::ans_arch.clear();
                 ::t_time = 1;
