@@ -231,10 +231,12 @@ Tear gas
 Teardrop	
 Teddy bear	
 Tee
-Teen	Teenager	
+Teen	
+Teenager	
 Teeth
 Telecommuting	
-Telegram	Telephone
+Telegram	
+Telephone
 Telescope	
 Television	
 Teller
