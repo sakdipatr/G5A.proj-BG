@@ -6,9 +6,9 @@
 #include <chrono>
 #include <thread>
 #include <vector>
-#include <conio.h>
+#include <cstring>
 
-using namespace std::chrono;
+//using namespace std::chrono;
 using namespace std;
 
 ifstream qs,checkaws;
@@ -25,6 +25,10 @@ int r = 0;
 int score = 0;
 int n_name = 0;
 int q = 0;
+int Dg = 0;
+double sec = 0;
+double t_time = 1.0;
+double sec_now = 0;
 
 char random_letter(){
     return 'A' + rand()%26;
@@ -56,10 +60,10 @@ void check_answer(){
     for(int i = 0; i < ans_arch.size(); i++){
         checkaws.open("Answer\\"+q_ans[i]);
         cout << i+1 << ". ";
-        while(getline(checkaws,tl)){
-            if(tl == ans_arch[i]){
+        while (getline(checkaws, tl)) {
+            if (tl[0] == ltt && tl == ans_arch[i]) {
                 cout << ans_arch[i] << " +1score" << " ";
-                ::score++ ;
+                ::score++;
             }
         }
         checkaws.close();
@@ -67,14 +71,78 @@ void check_answer(){
     cout << endl;
 }
 
+void help_ans(){
+
+}
+void Countdown_Timer(double seconds){
+    if(r == 1){
+        if(seconds <= 0){
+            cout << endl << endl << "Time's up !!!  T_T" << " " << "Enter any letter :";
+            ::r = 0;
+            ::t_time = 1.0;
+            return;
+        }
+        this_thread::sleep_for(std::chrono::seconds(1));
+        ::sec_now = seconds;
+        cout << seconds ;
+        Countdown_Timer(seconds - t_time);
+        
+    }
+}
+
+void Draw_G(){
+    ::r = 0;
+    int ch_n = 0;
+    if(aws == "1"){
+        ::Dg = 2;//rand()%6;
+        switch (Dg){
+            case 1:
+                cout << "you got stop time card " << endl;
+                cout << "if you want to use this card pls enter 1 :";
+                cin >> ch_n;
+                if(ch_n == 1) ::r = 0;
+                break;
+            case 2:////////
+                cout << "you got slow time card " << endl;
+                cout << "if you want to use this card pls enter 1 :";
+                cin >> ch_n;
+                if(ch_n == 1){
+                    ::t_time = 0.5;
+                    thread task1(Countdown_Timer, sec_now);
+                }
+                ::r = 1;
+                break;
+            case 3://///////////
+                cout << "you got help answer card " << endl;
+                cout << "if you want to use this card pls enter 1 :";
+                cin >> ch_n;
+                if(ch_n == 1) help_ans();
+                break;
+            case 4:
+                cout << "you got speed time card " << endl;
+                cout << "if you want to use this card pls enter 1 :";
+                cin >> ch_n;
+                if(ch_n == 1) ::t_time = 1.5;
+                break;
+            case 5:
+                cout << "you got bonus score card " << endl;
+                cout << "if you want to use this card pls enter 1 :";
+                cin >> ch_n;
+                if(ch_n == 1) ::score++;
+                break;
+        }
+    }
+    ::r = 1;
+}
 void answer_ply(){
     qs.open("Question\\"+ques[q]);
     while(getline(qs, tl)){
         cout << tl << ' ';
-        cin >> aws;
-        if(r == 0) {
+        cin >> ::aws;
+        if(r == 0){
             break;
         }
+        if(aws == "1") Draw_G();
         ::ans_arch.push_back(aws);
     }
     qs.close();
@@ -82,17 +150,7 @@ void answer_ply(){
     check_answer();
 }
 
-void Countdown_Timer(int seconds){
-    if(r == 1){
-        if(seconds <= 0){
-            cout << endl << endl << "Time's up !!!  T_T" << endl;
-            ::r = 0;
-            return;
-        }
-        this_thread::sleep_for(std::chrono::seconds(1));
-        Countdown_Timer(seconds -1);
-    }
-}
+
 
 /*void Countdown_Timer(int seconds){
     int remaining_time = seconds;
@@ -115,14 +173,13 @@ void Countdown_Timer(int seconds){
 
 int main() {
     srand(time(0));
-
     int st = 1;
     int bt = 0;
-    int sec = 0;
+    
 
     while(st == 1){
 
-        cout << "Enter number 1 for strat : ";
+        cout << "Enter number 1 for start : ";
         cin >> bt;
         cout << endl;
 
@@ -136,27 +193,28 @@ int main() {
 
 
             cout << "Enter time (sec) : ";
-            cin >> sec;
+            cin >> ::sec;
             cout << endl;
 
             for(int n = 0 ; n < n_name ; n++){
                 ::r = 1;
                 cout << "Round "<< n+1 << " player : "<< name_ply[n] << endl;
                 cout << endl;
-
                 thread task_cd(Countdown_Timer,sec);
 
                 cout << sec << " " << "SECOND LEFT!!!!" << endl << endl;
 
                 random_question();
                 answer_ply();
+                ::r = 0;
+                ::t_time = 1;
+                task_cd.join();
 
                 cout << endl << "*-----------------------*" << endl;
                 cout << endl << name_ply[n]<<" score is : " << score << endl;
                 cout << endl << "-----------------------------------"<< endl;
 
                 ::ans_arch.clear();
-                ::r = 0;
                 score = 0;
             }
         }
