@@ -1,64 +1,97 @@
-Asian tea
-Banana
-Berry land
-Blackcurrant 
-Black and White 
+Almond
+Apple
 Blackberry
-Blueberry 
-Buttermilk
-Caramel
-Cantaloupe
-Cappuccino 
-Caramel
+Banana
+Black Cherry
+Blueberry
+Brownie
+Bubblegum
+Butterscotch
 Chocolate
-Chocolate Chip 
-Chocolate Chip Mocha 
-Coconut 
-Coconut Milk 
-Coconut Milk and Egg yolk
-Coffe
+Cappuccino
+Caramel Cream
+Caramel Nut Cluster
+Caramel Peanut Butter
+Carrot Cake Ice Cream
+Cherry
+Chocolate Almond
+Chocolate Cherry Fudge
+Chocolate Chip
+Chocolate chip cookie dough
+Coffee
 Cookies and Cream
+Cranberry
 Dark Chocolate
-Double chocolatechip
-Durian 
-E
-Fruity
-Green apple
-Green tea 
-Glass jelly sherbet 
-Honey
-I
-J
+Donnatella
+Dulce de Leche
+Espresso
+Espresso Fudge
+Fudge
+French Vanilla
+Frutti Tutti
+Fudge Mountain
+Fudge Ripples
+Grape
+Ginger
+Green Tea
+Guinness
+Honeycomb
+Irish Cream
+Jelly Bean
+Jalapeno
+Jam
+Key Lime Pie
 Kiwi
-Lemon sherbet
-Lime
-Lychee
-Lychee Yogurt
-Matcha green tea
+Lemon
+Licorice
+Mint Chocolate Chip
 Mango
-Mangosteen
+Neapolitan
+Maple
+Maple Walnut
 Mint
-Nata de coco
-Orange 
-Passion fruit
+Nut
+Orange
+Oreo
+Praline
 Peach
+Quince
+Queen Anne Cherries 
+Quandong 
+Quararibea 
+Quenepa 
+Querina Apple 
+Quinault Strawberry
+Rocky Road
+Peanut
+Peanut Butter
+Pecan
+Peppermint
 Pineapple
-Q
-Royale raisin
-Ruammitr 
-Rum Raisin 
-Santol 
-Sherbet 
-Sorbet
+Pistachio
+Raspberry
+Raspberry 
+Rum
+Rocky Road
+Rum Raisin
 Strawberry
-Tamarind
-Taro
-Thai tea
-Thai tea with pearl
-Tutti fruity
-U
+Sherbert
+Triple Strawberry
+Strawberry Cheesecake
+Strawberry Shortcake
+Toffee 
+Temptations
+Ububese
+Ugli
+Ugni Berry
+Umbra
+Umbu
+Urava
+Usuma fruit
+Uvalino grape
+Uvilla
 Vanilla
-W
+Watermelon
 X
-Yogurt
+Y
 Z
