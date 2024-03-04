@@ -3,12 +3,169 @@ Animals
 Books
 Cafe
 Classical painting 
-Cloakroom 
+Cloakroom
+Desk	
+Diamond	
+Dice
+Dog	
+Donut	
+Door
+Dragon
 Electricity
 Etching
 Exhibition 
+Fireworks	
+Fish
+Flag
+Flamingo	
+Flower	
+Football
+Fork	
+Fountain	
+Frying pan
 Gift shop 
+Habitat	
+Hair	
+Hairstyle	
+Halloween	
+Ham
+Hammer	
+Handicap	
+Handwriting
+Hang gliding	
+Happiness	
+Harbor
+Hard work	
+Hardwood	
+Harmony
+Harp	
+Harvest	
+Hat
+Hawk	
+Hay	
+Hazard
+Headache	
+Healing	
+Health
+Hearing	
+Heart	
+Heat
+Heaven	
+Hedgehog	
+Height
+Hell	Help	
+Hemorrhage
+Herb	
+Herd	
+Hermit crab
+Hero	
+Hesitation	
+Hibiscus
+Hiking	
+Hills	
+Hinduism
+Hippopotamus
+Historic	
+History
+Hobbit	
+Hockey	
+Hoist
+Holiday	
+Hollywood	
+Ice	
+Ice cream	
+Identity	
+Idiot	
+Ignorance
+Illusion	
+Image	
+Imagination
+Immigration	
+Imperfection	
+Importance
+Improvement	
+Incentive	
+Incident
+Income	
+Independence
 Impressionist painting
+Indian cuisine
+Indigenous	
+Indigo	
+Individual
+Indoor	
+Industrial
+Industry
+Inertia	
+Infant	
+Infertility
+Inflation	
+Influence	
+Information
+Infrastructure	
+Inheritance	
+Initiative
+Injection	
+Injustice	
+Ink
+Inmate	
+Inner peace	
+Innovation
+Insects	
+Insomnia	
+Inspiration
+Instagram	
+Instruction	
+Insurance
+Integrity	
+Intelligence	
+Intention
+Interact	
+Internet	
+Jacket	
+Jackfruit	
+Jaguar
+Jaguar	
+Jalapeno	
+Jam
+James Bond	
+January	
+Japan
+Jasmine	
+Javelin	
+Jaybird
+Jazz	
+Jeans	
+Jeep
+Jelly	Jelly	
+Jellyfish
+Jellyfish	
+Jet	
+Jet ski
+Jewelry	
+Jewelry	
+Jigsaw puzzle
+Jigsaw puzzle	
+Jingle bells	
+Job
+Jockey	
+Jogging	
+Jogging
+Juice	
+Jujube	
+Jungle
+Juniper	
+Junk food	
+Ketchup	
+Kettle	
+Keyboard
+Keychain	
+Keystone	
+Kickboxing
+Kidney	
+Kilt	
+Kindle	
+Kiwi
 Landscape 
 Low relief
 Mortar
@@ -19,14 +176,97 @@ Oil painting
 Photograph
 Portrait 
 Pottery 
+Quill	
+Quilt
 Realism
 Sculpture 
 Souvenir
 Still life 
 Stairs
+Tabby cat	
+Table	
+Tablet
+Tachometer	
+Taco	
+Tadpole
+Tag	
+Tail	
+Talc
+Talisman	
+Talk show	
+Talking
+Tambourine	
+Tampon	
+Tan
+Tandoori chicken	
+Tank	
+Tank top
+Tap	
+Tape	
+Tape measure
+Tapestry	
+Tapeworm	
+Tapioca
+Tarmac	
+Tarragon	
+Tart
+Tartar sauce	
+Tasmanian devil	
+Tassel
+Taste	
+Tasty	
+Tattoo
+Tavern	
+Tax	
+Taxi
+Tea	
+Teach	
+Teacher
+Teaching	
+Team	
+Teamwork
+Teapot	
+Tear	
+Tear gas
+Teardrop	
+Teddy bear	
+Tee
+Teen	Teenager	
+Teeth
+Telecommuting	
+Telegram	Telephone
+Telescope	
+Television	
+Teller
+Umbrella	
+Underwear	
+Unicorn
+Uniform	
+Uranium	
+Vacuum
+Valentine	
+Van	
+Vase
+Vegetable	
+Vehicle	
+Vest
+Vine	Violin	
+Vitamin
+Volcano	
+Volleyball
 Warning sign
 Wall
 Watercolor painting
 Wood 
 Wood engraving
-Tile
+Xylophone
+Yacht	
+Yak
+Yard	
+Yarn	
+Year
+Yellow	
+Yoga	
+Yolk
+Zinc
+Zipper
