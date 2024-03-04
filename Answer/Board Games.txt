@@ -27,6 +27,7 @@ Everdell
 Fallout shelter
 Flower shop 
 Geistes blitz 
+H
 I am the boss
 Jaws 
 Kariba
@@ -55,6 +56,7 @@ Pandemic
 Pick me
 Political mess
 Potion explosion
+Q
 Risk
 Salem 
 Scythe
@@ -85,5 +87,7 @@ Wana
 War of the three kingdoms
 When i dream 
 Wingspan
+X
+Y
 Zombicide
 
