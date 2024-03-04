@@ -71,7 +71,7 @@ void check_answer(){
                 cout << " +1 score" << " ";
                 score++;
                 correctAnswerFound = true;
-                break; // Exit the loop when a correct answer is found
+                break;
             }
         }
         if (!correctAnswerFound) {
@@ -144,7 +144,7 @@ void answer_ply(){
     while(getline(qs, tl)){
         cout << tl << " ";
         cin >> ::aws;
-        if(r == 0){ // r = เวลาหมดให้เลิกพิมพ์แล้วเช็ค score
+        if(r == 0){
             break;
         }
         if(aws == "1"){
@@ -199,8 +199,8 @@ int main() {
                 cout << endl << "*-----------------------*" << endl;
                 cout << endl << name_ply[n]<<" score is : " << score << endl;
                 ch_win.push_back(score);
-                if(n == n_name-1){
-                    for(int i = 0; i < n_name; i++){////ereror
+                if(n == n_name-1){//////////////////////////////////////////////
+                    for(int i = 0; i < n_name; i++){
                         if(ch_win[i] > ch_win[i+1]){
                             cout << name_ply[i] << " is win.!!!!";
                         }else if(ch_win[i] == ch_win[i+1]){
@@ -209,7 +209,7 @@ int main() {
                             cout << "nice try.!!!!";
                         }
                     }
-                }
+                }///////////////////////////////////////////////////////////////
                 cout << endl << "-----------------------------------"<< endl;
                 ::ans_arch.clear();
                 ::t_time = 1;
