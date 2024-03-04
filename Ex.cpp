@@ -45,11 +45,17 @@ void players(){
 
 void random_question(){
     ::q = rand()%3;
-    for(int i = 0;i < 3;i++){
-        if(i == q){
-            for(int j = 0; j < 10; j++){
-                ::q_ans.push_back(aws1[j]);
-            }
+    if( q == 0 ){
+        for(int i = 0; i < 10; i++ ){
+            ::q_ans.push_back(aws1[i]);
+        }
+    }else if( q == 1 ){
+        for(int i = 0; i < 10; i++ ){
+            ::q_ans.push_back(aws2[i]);
+        }
+    }else if( q == 2 ){
+        for(int i = 0; i < 10; i++ ){
+            ::q_ans.push_back(aws3[i]);
         }
     }
 }
@@ -58,11 +64,18 @@ void check_answer(){
     for(int i = 0; i < ans_arch.size(); i++){
         checkaws.open("Answer\\"+q_ans[i]);
         cout << i+1 << "." << ans_arch[i] << " ";
+        string tl;
+        bool correctAnswerFound = false;
         while (getline(checkaws, tl)) {
-            if (tl[0] == ltt && tl == ans_arch[i]) {
-                cout <<"+1score" << " ";
-                ::score++;
+            if (!tl.empty() && tl[0] == ltt && tl == ans_arch[i]) {
+                cout << " +1 score" << " ";
+                score++;
+                correctAnswerFound = true;
+                break; // Exit the loop when a correct answer is found
             }
+        }
+        if (!correctAnswerFound) {
+            cout << " Incorrect ";
         }
         checkaws.close();
     }
@@ -89,7 +102,7 @@ void Countdown_Timer(double seconds){
 void Draw_G(){
     ::r = 0;
     int ch_n = 0;
-    ::Dg = 2;//rand()%6;
+    ::Dg = rand()%6;
     switch (Dg){
         case 1:
             cout << "you got stop time card " << endl;
@@ -114,7 +127,7 @@ void Draw_G(){
             if(ch_n == 1){
                 ::t_time = 1.5;
                 ::r = 1;
-                
+                thread task_cd(Countdown_Timer, sec_now);
             }
             break;
         case 4:
@@ -180,7 +193,7 @@ int main() {
                 cout << endl << name_ply[n]<<" score is : " << score << endl;
                 ch_win.push_back(score);
                 if(n == n_name-1){
-                    for(int i = 0; i < n_name; i++){
+                    for(int i = 0; i < n_name; i++){////ereror
                         if(ch_win[i] > ch_win[i+1]){
                             cout << name_ply[i] << " is win.!!!!";
                         }else if(ch_win[i] == ch_win[i+1]){
@@ -193,7 +206,7 @@ int main() {
                 cout << endl << "-----------------------------------"<< endl;
                 ::ans_arch.clear();
                 ::t_time = 1;
-                score = 0;
+                ::score = 0;
             }
         }
         st = 0;
