@@ -53,6 +53,8 @@ Holdfast
 Inferior purlin
 Interior decoration
 Iron square
+J
+K
 Ladder
 Laminated gals
 Laying on trowel
@@ -120,6 +122,7 @@ Trowel
 Try square
 Two hand saw
 Tongs
+U
 Vice
 Wedge
 Wheelbarrow
@@ -129,3 +132,6 @@ Wood
 Wooden nail
 Window frame
 Work platform
+X
+Y
+Z
