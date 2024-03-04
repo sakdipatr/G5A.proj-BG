@@ -1,68 +1,92 @@
-american football
-archery
-badminton
-baseball
-basketball
-beach volleyball
-billiards
-bowling
-boxing
-barallel bars
-canoeing
-car racing 
-climbing
-cricket
-cycling
-chess
-diving
-football
-futsal
-fencing
-fishing
-golf
-gymnastics
-high jump
-hockey
-horse racing
-hurdles
-handball
-ice skating
-ice hockey
-judo
-javelin throw
-karate
-long jump
-motorcycle racing
-muay thai
-parachuting
-petanque
-rugby
-running
-roller skatingv
-skiing
-swimming
-scuba diving
-sketing
-skateboarding
-snooker
-surfing
-snowboarding
-sepaktakraw
-shooting
-sailing
-softball
-skydiving
-squash
-table tennis
-tennis
-taekwando
-volleyball
-weightlifting
-wrestling
-water polo
-
-
-
+American football
+Archery
+Badminton
+Baseball
+Basketball
+Beach volleyball
+Billiards
+Bowling
+Boxing
+Barallel bars
+Canoeing
+Car racing 
+Climbing
+Cricket
+Cycling
+Chess
+Diving
+E-Bike Racing
+Ecuavoley
+Eight-Ball
+Eight-man Football
+Ekiden
+Elephant Polo
+Endurance Racing
+Endurance Riding
+Endurance Running
+Enduro 
+Endurocross
+English Billiards
+Equestrian Vaulting
+Equestrian
+E-sport
+Eton Fives
+European
+Eventing
+Expedition racing
+Extreme Canoe Slalom
+Football
+Futsal
+Fencing
+Fishing
+Golf
+Gymnastics
+High jump
+Hockey
+Horse racing
+Hurdles
+Handball
+Ice skating
+Ice hockey
+Judo
+Javelin throw
+Karate
+Long jump
+Motorcycle racing
+Muay thai
+Netball
+Orienteering
+Parachuting
+Petanque
+Quidditch
+Rugby
+Running
+Roller skatingv
+Skiing
+Swimming
+Scuba diving
+Sketing
+Skateboarding
+Snooker
+Surfing
+Snowboarding
+Sepaktakraw
+Shooting
+Sailing
+Softball
+Skydiving
+Squash
+Table tennis
+Tennis
+Taekwando
+Ultimate Frisbee
+Volleyball
+Weightlifting
+Wrestling
+Water polo
+Xare
+Yoga
+Zumba
 
 
 
