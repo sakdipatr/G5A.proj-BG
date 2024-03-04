@@ -53,6 +53,32 @@ Holdfast
 Inferior purlin
 Interior decoration
 Iron square
+J Channel
+Jack post
+Jack rafter
+Jamb
+Joint
+Joint cement 
+Joint compound
+Joint tenancy
+Joint trench
+KEO International Consultants
+KKR
+KPMG US
+KUKA
+Kaiser Permanente
+Kantar
+Kavak.com
+Kellanova
+Kellogg Company
+Kelly
+Kering
+Kiewit
+Kimberly-Clark
+Klabin
+Korn Ferry
+Kotak Mahindra Bank
+Kraft Heinz
 Ladder
 Laminated gals
 Laying on trowel
@@ -120,6 +146,11 @@ Trowel
 Try square
 Two hand saw
 Tongs
+UL
+Undercoat
+Underground plumbing
+Underlayment
+Union
 Vice
 Wedge
 Wheelbarrow
@@ -129,3 +160,8 @@ Wood
 Wooden nail
 Window frame
 Work platform
+XCR
+Yard of concrete
+Yoke
+Zone valve
+Zoning

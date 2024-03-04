@@ -33,7 +33,25 @@ Grape
 Grapefruit
 Genips
 Guava
+Hackberry
+Hala fruit
+Hardy kiwi
+Hawthorns
+Hog plum
+Honeydew
+Horned melon
+Huckleberry
+Huito
 Imbe
+Icacina
+Icaco
+Ice Cream Bean
+Ilama
+Illawarra Plum
+Indian Persimmon
+Indian gooseberry
+Indian prune
+Indonesian lime
 Jabuticaba
 Jackfruit	
 Jambul
@@ -85,17 +103,57 @@ Saguaro
 Tamarillo
 Tamarind
 Tomato
+Ububese
+Udara
+Ugli Fruit
+Ugni
+Ugni Blanc Grape
+Ugni Molinae
+Ukranian Heart Tomato
+Ula
+Umari
+Umbrafruit
+Umbrella Squash
+Umbu
+Ume
+Ume Plums
+Urava
+Usakhelauri
+Usama
+Utu
+Uva Rara Grape
+Uva Tosca Grape
+Uvalino Grape
+Uvaria
+Uvilla
+Valencia orange
+Van Dyke mango
+Vanilla
+Velvet tamarind
+Vernaccia grape
+Vicar of winkfield pear
+Victoria Plum
+Voavanga
+Volkamer Lemon
 Watermelon
 Water Apple
+Xanthium
+Xarello
+Xiangjiao
+Xigua
+Ximenia
+Xing Zi
+Xinomavro
+Xoconostle
+Xylocarp
 Yangmei
 Yuzu
-
-
-
-
-
-
-
-
-
-
+Zabergau reinette apples
+Zalzalak
+Zante Currant
+Zhe fruit
+Zig zag vine fruit
+Zinfandel grapes
+Ziziphus fruit
+Zucchini
+Zwetschge

@@ -21,11 +21,14 @@ Cookies and Cream
 Dark Chocolate
 Double chocolatechip
 Durian 
+E
 Fruity
 Green apple
 Green tea 
 Glass jelly sherbet 
 Honey
+I
+J
 Kiwi
 Lemon sherbet
 Lime
@@ -39,7 +42,8 @@ Nata de coco
 Orange 
 Passion fruit
 Peach
-Pineapple 
+Pineapple
+Q
 Royale raisin
 Ruammitr 
 Rum Raisin 
@@ -47,10 +51,14 @@ Santol
 Sherbet 
 Sorbet
 Strawberry
-Vanilla
 Tamarind
 Taro
 Thai tea
 Thai tea with pearl
 Tutti fruity
+U
+Vanilla
+W
+X
 Yogurt
+Z
