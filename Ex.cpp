@@ -57,30 +57,33 @@ void random_question(){
 void check_answer(){
     for(int i = 0; i < ans_arch.size(); i++){
         checkaws.open("Answer\\"+q_ans[i]);
-        cout << i+1 << ". ";
+        cout << i+1 << "." << ans_arch[i] << " ";
         while (getline(checkaws, tl)) {
             if (tl[0] == ltt && tl == ans_arch[i]) {
-                cout << ans_arch[i] << " +1score" << " ";
+                cout <<"+1score" << " ";
                 ::score++;
             }
         }
         checkaws.close();
     }
     cout << endl;
+    ::r = 0;
 }
 
 void Countdown_Timer(double seconds){
+    if(r == 1){
         if(seconds <= 0){
             cout << endl << endl << "Time's up !!!  T_T" << " " << "Enter any letter :";
             ::r = 0;
-            ::t_time = 1.0;
             return;
-        }if(r == 1){
-            this_thread::sleep_for(std::chrono::seconds(1));
-            ::sec_now = seconds;
-            cout << seconds ;
-            Countdown_Timer(seconds - t_time);
         }
+        if(r == 0){
+            return;
+        }
+        this_thread::sleep_for(std::chrono::seconds(1));
+        ::sec_now = seconds;
+        Countdown_Timer(seconds - t_time);
+    }
 }
 
 void Draw_G(){
@@ -94,25 +97,28 @@ void Draw_G(){
             cin >> ch_n;
             if(ch_n == 1) ::r = 0;
             break;
-        case 2://///////
+        case 2:
             cout << "you got slow time card " << endl;
             cout << "if you want to use this card pls enter 1 :";
             cin >> ch_n;
             if(ch_n == 1){
                 ::t_time = 0.5;
                 ::r = 1;
+                thread task_cd(Countdown_Timer, sec_now);
             }
             break;
-        case 3://///////
-            cout << "you got speed time card " << endl;
+        case 3:
+            cout << "you got speed time x1.5 card " << endl;
             cout << "if you want to use this card pls enter 1 :";
             cin >> ch_n;
             if(ch_n == 1){
                 ::t_time = 1.5;
+                ::r = 1;
+                
             }
             break;
         case 4:
-            cout << "you got bonus score card " << endl;
+            cout << "you got bonus 1 score card " << endl;
             cout << "if you want to use this card pls enter 1 :";
             cin >> ch_n;
             if(ch_n == 1) ::score++;
@@ -125,7 +131,7 @@ void answer_ply(){
     while(getline(qs, tl)){
         cout << tl << " ";
         cin >> ::aws;
-        if(r == 0){
+        if(r == 0){ // r = เวลาหมดให้เลิกพิมพ์แล้วเช็ค score
             break;
         }
         if(aws == "1"){
@@ -146,6 +152,7 @@ int main() {
     srand(time(0));
     int st = 1;
     int bt = 0;
+    vector<int> ch_win;
     while(st == 1){
         cout << "Enter number 1 for start : ";
         cin >> bt;
@@ -171,14 +178,25 @@ int main() {
                 task_cd.join();
                 cout << endl << "*-----------------------*" << endl;
                 cout << endl << name_ply[n]<<" score is : " << score << endl;
+                ch_win.push_back(score);
+                if(n == n_name-1){
+                    for(int i = 0; i < n_name; i++){
+                        if(ch_win[i] > ch_win[i+1]){
+                            cout << name_ply[i] << " is win.!!!!";
+                        }else if(ch_win[i] == ch_win[i+1]){
+                            cout << "draw. T-T";
+                        }else{
+                            cout << "nice try.!!!!";
+                        }
+                    }
+                }
                 cout << endl << "-----------------------------------"<< endl;
                 ::ans_arch.clear();
-                ::r = 0;
                 ::t_time = 1;
                 score = 0;
             }
         }
-    st = 0;
+        st = 0;
     }
     return 0;
 }
