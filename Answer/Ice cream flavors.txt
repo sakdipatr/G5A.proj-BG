@@ -46,15 +46,21 @@ Lemon
 Licorice
 Mint Chocolate Chip
 Mango
-Neapolitan
 Maple
 Maple Walnut
 Mint
+Neapolitan
 Nut
 Orange
 Oreo
 Praline
 Peach
+Peanut
+Peanut Butter
+Pecan
+Peppermint
+Pineapple
+Pistachio
 Quince
 Queen Anne Cherries 
 Quandong 
@@ -62,23 +68,17 @@ Quararibea
 Quenepa 
 Querina Apple 
 Quinault Strawberry
-Rocky Road
-Peanut
-Peanut Butter
-Pecan
-Peppermint
-Pineapple
-Pistachio
 Raspberry
+Rocky Road
 Raspberry 
 Rum
 Rocky Road
 Rum Raisin
 Strawberry
-Sherbert
-Triple Strawberry
+Sherbet
 Strawberry Cheesecake
 Strawberry Shortcake
+Triple Strawberry
 Toffee 
 Temptations
 Ububese
@@ -92,6 +92,13 @@ Uvalino grape
 Uvilla
 Vanilla
 Watermelon
-X
-Y
-Z
+Xylophone Berry Blast
+Xenon Blueberry Dream
+X-factor Rocky Road
+Yogurt 
+Yellow lemon
+Yellow banana
+Yellow mango
+Yellow cake yams
+Z-bar flashing
+Zesty lemon
