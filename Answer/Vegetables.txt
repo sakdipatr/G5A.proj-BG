@@ -16,7 +16,7 @@ Cabbage
 Carrot
 Cauliflower
 Chilli
-corn
+Corn
 Coriander
 Cucumber
 Cashew nut
@@ -30,7 +30,10 @@ Galangal
 Ginger
 Green onion
 Green bean
+H
 Ivy gourd
+J
+K
 Kaffir lime
 Kale
 Lemon
@@ -42,6 +45,7 @@ Leek
 Mint
 Mung bean
 Morning glory
+N
 Okra
 Onion
 Oyster mushrooms
@@ -52,6 +56,7 @@ Pepper
 Peppermint
 Potato
 Pumpkin
+Q
 Radish
 Red bean
 Red beetroot
@@ -67,9 +72,12 @@ Sweet basil
 Taro
 Tomato
 Turnip
+U
+V
 Water mimosa
 Winged bean
 White jelly fungus
+X
 Yam
 Zucchini
 
