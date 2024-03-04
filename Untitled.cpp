@@ -6,13 +6,11 @@
 #include <chrono>
 #include <thread>
 #include <vector>
-#include <conio.h>
+#include <cstring>
 
-using namespace std::chrono;
 using namespace std;
 
 ifstream qs,checkaws;
-char ltt;
 string ques[3] = {"1st_Q-list.txt","2nd_Q-list.txt","3rd_Q-list.txt"};
 string aws1[10] = {"Capital cities.txt","Countries.txt","Land Animals.txt","Musical Instruments.txt","Flowers.txt","Perfume Brands.txt","Languages.txt","Ocean Animals.txt","Electronic Gadgets.txt","Cooking Utensils.txt"};
 string aws2[10] = {"Body parts.txt","Colors.txt","Programming Languages.txt","Gemstones.txt","Disney Character Names.txt","Video Games.txt","Job titles.txt","Holidays.txt","Celebrities.txt","Indoors and Outdoor Hobbies.txt"};
@@ -21,10 +19,15 @@ string tl,aws,name;
 vector<string> ans_arch;
 vector<string> q_ans;
 vector<string> name_ply;
+char ltt;
 int r = 0;
 int score = 0;
 int n_name = 0;
 int q = 0;
+int Dg = 0;
+double sec = 0;
+double t_time = 1.0;
+double sec_now = 0;
 
 char random_letter(){
     return 'A' + rand()%26;
@@ -38,16 +41,21 @@ void players(){
         cin >> name;
         ::name_ply.push_back(name);
     }
-
 }
 
 void random_question(){
     ::q = rand()%3;
-    for(int i = 0;i < 3;i++){
-        if(i == q){
-            for(int j = 0; j < 10; j++){
-                ::q_ans.push_back(aws1[j]);
-            }
+    if( q == 0 ){
+        for(int i = 0; i < 10; i++ ){
+            ::q_ans.push_back(aws1[i]);
+        }
+    }else if( q == 1 ){
+        for(int i = 0; i < 10; i++ ){
+            ::q_ans.push_back(aws2[i]);
+        }
+    }else if( q == 2 ){
+        for(int i = 0; i < 10; i++ ){
+            ::q_ans.push_back(aws3[i]);
         }
     }
 }
@@ -55,77 +63,120 @@ void random_question(){
 void check_answer(){
     for(int i = 0; i < ans_arch.size(); i++){
         checkaws.open("Answer\\"+q_ans[i]);
-        cout << i+1 << ". ";
-        while(getline(checkaws,tl)){
-            if(tl == ans_arch[i]){
-                cout << ans_arch[i] << " +1score" << " ";
-                ::score++ ;
+        cout << i+1 << "." << ans_arch[i] << " ";
+        string tl;
+        bool correctAnswerFound = false;
+        while (getline(checkaws, tl)) {
+            if (!tl.empty() && tl[0] == ltt && tl == ans_arch[i]) {
+                cout << " +1 score" << " ";
+                score++;
+                correctAnswerFound = true;
+                break;
             }
+        }
+        if (!correctAnswerFound) {
+            cout << " Incorrect ";
         }
         checkaws.close();
     }
     cout << endl;
+    ::r = 0;
+}
+
+void Countdown_Timer(double seconds){
+    if(r == 1){
+        if(seconds <= 0){
+            cout << endl << endl << "Time's up !!!  T_T" << " " << "Enter any letter :";
+            ::r = 0;
+            return;
+        }
+        if(r == 0){
+            return;
+        }
+        this_thread::sleep_for(std::chrono::seconds(1));
+        ::sec_now = seconds;
+        Countdown_Timer(seconds - t_time);
+    }
+}
+
+void Draw_G(){
+    ::r = 0;
+    int ch_n = 0;
+    ::Dg = rand()%6;
+    switch (Dg){
+        case 1:
+            cout << "you got stop time card " << endl;
+            cout << "if you want to use this card pls enter 1 :";
+            cin >> ch_n;
+            if(ch_n == 1) ::r = 0;
+            break;
+        case 2:
+            cout << "you got slow time card " << endl;
+            cout << "if you want to use this card pls enter 1 :";
+            cin >> ch_n;
+            if(ch_n == 1){
+                ::t_time = 0.5;
+                ::r = 1;
+                thread task_cd(Countdown_Timer, sec_now);
+            }
+            break;
+        case 3:
+            cout << "you got speed time x1.5 card " << endl;
+            cout << "if you want to use this card pls enter 1 :";
+            cin >> ch_n;
+            if(ch_n == 1){
+                ::t_time = 1.5;
+                ::r = 1;
+                thread task_cd(Countdown_Timer, sec_now);
+            }
+            break;
+        case 4:
+            cout << "you got bonus 1 score card " << endl;
+            cout << "if you want to use this card pls enter 1 :";
+            cin >> ch_n;
+            if(ch_n == 1) ::score++;
+            break;
+    }
 }
 
 void answer_ply(){
     qs.open("Question\\"+ques[q]);
     while(getline(qs, tl)){
-        cout << tl << ' ';
-        cin >> aws;
-        if(r == 0) {
+        cout << tl << " ";
+        cin >> ::aws;
+        if(r == 0){
             break;
         }
-        ::ans_arch.push_back(aws);
+        if(aws == "1"){
+            Draw_G();
+            cout << tl << " ";
+            cin >> ::aws;
+        }
+        if(aws != "1"){
+            ::ans_arch.push_back(aws);
+        }
     }
     qs.close();
     cout << endl;
     check_answer();
 }
 
-void Countdown_Timer(int seconds){
-    if(r == 1){
-        if(seconds <= 0){
-            cout << endl << endl << "Time's up !!!  T_T" << endl;
-            ::r = 0;
-            return;
-        }
-        this_thread::sleep_for(std::chrono::seconds(1));
-        Countdown_Timer(seconds -1);
-    }
-}
-
-/*void Countdown_Timer(int seconds){
-    int remaining_time = seconds;
-    time_t start_time = time(NULL);
-    while (remaining_time > 0){
-        if(r == 1){
-            time_t current_time = time(NULL);
-            int elapsed_seconds = difftime(current_time, start_time);
-            if (elapsed_seconds >= remaining_time)
-            {
-                cout << endl << "TIME'S UP!!!" << endl;
-                ::r = 0;
-                break;
-            }
-            remaining_time -= elapsed_seconds;
-            start_time = current_time;
-        }
-    }
-}*/
-
 int main() {
     srand(time(0));
-
     int st = 1;
     int bt = 0;
-    int sec = 0;
-
+    vector<int> ch_win;
+    cout << "                                   ***   ***  " << "                                                                                        ***   ***  "  << endl;
+    cout << "                                  ***** ***** " << "           ___       ___  ___          ___    "    <<  " _____  ___  "  <<  "    ___  ___   ___  |  |   " << " ***** ***** "  << endl;
+    cout << "                                 *************" << "   |    | |    |    |    |   | |\\  /| |       "   <<  "   |   |   | "  <<  "   |    |     |     |  |   " << "*************"  << endl;
+    cout << " -._.-._.-._.-._.-._.-._.-._.-._. *********** " << "   | /\\ | |--- |    |    |   | | \\/ | |---    "  <<  "   |   |   | "  <<  "   '--. | --. |     |  |   " << " *********** -._.-._.-._.-._.-._.-._.-._.-._. ";
+    cout << "                                  *********  "  << "   |/  \\| |___ |___ |___ |___| |    | |___    "   <<  "   |   |___| "  <<  "   ___| |___| |___  .  .   " << "  *********  "  << endl;
+    cout << "                                     *****    " << "                                                                                          *****    "  <<endl;
+    cout << "                                       *      " << "                                                                                            *      "  << endl;
     while(st == 1){
-
-        cout << "Enter number 1 for strat : ";
+        cout << "Enter number 1 for start : ";
         cin >> bt;
         cout << endl;
-
         if(bt == 1){
             players();
             cout <<  "*-----------------------*" << endl;
@@ -133,36 +184,68 @@ int main() {
             cout << endl << "Your letter is "<< ltt << endl;
             cout << endl << "*-----------------------*" << endl;
             cout << endl ;
-
-
             cout << "Enter time (sec) : ";
-            cin >> sec;
+            cin >> ::sec;
             cout << endl;
-
             for(int n = 0 ; n < n_name ; n++){
                 ::r = 1;
                 cout << "Round "<< n+1 << " player : "<< name_ply[n] << endl;
                 cout << endl;
-
                 thread task_cd(Countdown_Timer,sec);
-
                 cout << sec << " " << "SECOND LEFT!!!!" << endl << endl;
-
                 random_question();
                 answer_ply();
-
                 task_cd.join();
-
                 cout << endl << "*-----------------------*" << endl;
                 cout << endl << name_ply[n]<<" score is : " << score << endl;
-                cout << endl << "-----------------------------------"<< endl;
-
+                ch_win.push_back(score);
+                // if(n == n_name-1){//////////////////////////////////////////////
+                //     for(int i = 0; i < n_name; i++){
+                //         if(ch_win[i] > ch_win[i+1]){
+                //             cout << name_ply[i] << " is win.!!!!";
+                //         }else if(ch_win[i] == ch_win[i+1]){
+                //             cout << "draw. T-T";
+                //         }else{
+                //             cout << "nice try.!!!!";
+                //         }
+                //     }
+                // }///////////////////////////////////////////////////////////////
+                // cout << endl << "-----------------------------------"<< endl;
+                if(n == n_name - 1){
+                    int maxScore = ch_win[0]; 
+                    int winnerIndex = 0; 
+                    for (int i = 1; i < n_name; i++){
+                        if (ch_win[i] > maxScore){
+                            maxScore = ch_win[i];
+                            winnerIndex = i;
+                        }
+                    }
+                    bool draw = false;
+                    for (int i = 0; i < n_name; i++){
+                        if (i != winnerIndex && ch_win[i] == maxScore){
+                            draw = true;
+                            break;
+                        }
+                    }
+                    if (draw){
+                        cout << "Draw. T-T" << endl;
+                    }else{
+                        cout << name_ply[winnerIndex] << " is the winner!!!" << endl;
+                    }
+                }
                 ::ans_arch.clear();
-                ::r = 0;
-                score = 0;
+                ::t_time = 1;
+                ::score = 0;
             }
         }
-    st = 0;
+        st = 0;
     }
+    cout << "                                      ***   ***     "  << "                                                      ***   ***  " << endl;   
+    cout << "                                     ***** *****    "  << " ___        ___     ___   ___            __   | |    ***** *****" << endl;
+    cout << "                                    *************   "  << "|    |\\  | |   \\   |     |   | |\\    /| |     | |   *************" << endl;
+    cout << "    -._.-._.-._.-._.-._.-._.-._.-._. ***********    "  << "|--- | \\ | |   |   | --. |---| | \\  / | |--   | |    *********** -._.-._.-._.-._.-._.-._.-._.-._." << endl;  
+    cout << "                                      *********     "  << "|___ |  \\| |___/   |___| |   | |  \\/  | |__   . .     *********" << endl;
+    cout << "                                        *****       "  << "                                                        *****" << endl;
+    cout << "                                          *         "  << "                                                          *" << endl;
     return 0;
 }
