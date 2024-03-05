@@ -24,6 +24,7 @@ int r = 0;
 int score = 0;
 int n_name = 0;
 int q = 0;
+int ch_r = 1;
 int Dg = 0;
 double sec = 0;
 double t_time = 1.0;
@@ -88,9 +89,7 @@ void Countdown_Timer(double seconds){
         if(seconds <= 0){
             cout << endl << endl << "Time's up !!!  T_T" << " " << "Enter any letter :";
             ::r = 0;
-            return;
-        }
-        if(r == 0){
+            ::ch_r = 0;
             return;
         }
         this_thread::sleep_for(std::chrono::seconds(1));
@@ -125,8 +124,8 @@ void check_winner(){
 void Draw_G(){
     ::r = 0;
     int ch_n = 0;
-    ::Dg = rand()%6;
-    switch (Dg){
+    ::Dg = rand()%4;
+    switch (Dg){ 
         case 1:
             cout << "you got stop time card " << endl;
             cout << "if you want to use this card pls enter 1 :";
@@ -158,16 +157,18 @@ void Draw_G(){
             cout << "if you want to use this card pls enter 1 :";
             cin >> ch_n;
             if(ch_n == 1) ::score++;
+            ::r = 1;
             break;
     }
 }
+
 
 void answer_ply(){
     qs.open("Question\\"+ques[q]);
     while(getline(qs, tl)){
         cout << tl << " ";
         cin >> ::aws;
-        if(r == 0){
+        if(r == 0 && ch_r == 0){
             break;
         }
         if(aws == "1"){
@@ -175,7 +176,7 @@ void answer_ply(){
             cout << tl << " ";
             cin >> ::aws;
         }
-        if(aws != "1"){
+        else if(aws != "1"){
             ::ans_arch.push_back(aws);
         }
     }
